@@ -46,7 +46,7 @@ arc-swap = { version = "1.7.1" }
 termini = "1"
 
 # Logging
-fern = "0.6"
+fern = "0.7"
 chrono = { version = "0.4", default-features = false, features = ["clock"] }
 log = "0.4"
 
@@ -80,7 +80,7 @@ steel-doc = { git = "https://github.com/mattwparas/steel.git", version = "0.6.0"
 
 [target.'cfg(not(windows))'.dependencies]  # https://github.com/vorner/signal-hook/issues/100
 signal-hook-tokio = { version = "0.3", features = ["futures-v0_3"] }
-libc = "0.2.159"
+libc = "0.2.161"
 
 [target.'cfg(target_os = "macos")'.dependencies]
 crossterm = { version = "0.28", features = ["event-stream", "use-dev-tty", "libc"] }
